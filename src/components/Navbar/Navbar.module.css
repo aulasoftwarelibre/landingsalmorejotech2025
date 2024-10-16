@@ -1,0 +1,45 @@
+.navback {
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 50;
+  line-height: 59.28px;
+  z-index: 1000;
+}
+
+.navback::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 50px;
+  height: 8px;
+  background-color: white;
+}
+
+.icon{
+  margin-bottom: 5px !important;
+}
+
+.boldText {
+  color: #fff !important;
+  font-size: 25px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.boldText:hover {
+  text-shadow: 0 0 1px white;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.boldIcon {
+  color: #fff !important;
+  font-size: 30px;
+}
+

@@ -1,0 +1,58 @@
+.headerContainer {
+    background-image: url('../../sprites/tomato.svg'), url('../../sprites/olive.svg');
+    background-position: left top, right top; 
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20%, 15%; 
+    position: relative;
+    background-color: linear-gradient(180deg, #f75b39 0%, #ff9f1a 100%);
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    line-height: 71.14px;
+    height: 100%;
+    color: white;
+    
+    text-align: center;
+}
+
+.logo {
+    margin-top: 12%; 
+    padding-left: 12%; 
+    padding-right: 12%;
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        background-size: 30%, 17%; 
+        background-position: left top, right top;
+    }
+
+    .logo {
+        margin-top: 27%; 
+        padding-left: 3%; 
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 420px) {
+    .headerContainer {
+        background-size: 40%, 20%; 
+        background-position: left top, right top;
+
+    }
+
+    .logo {
+        margin-top: 27%; 
+        padding-left: 3%; 
+        padding-right: 3%;
+    }
+}
+
+.calendar{
+    margin-right: 10px;
+}
