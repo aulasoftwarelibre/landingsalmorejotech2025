@@ -1,8 +1,8 @@
 .headerContainer {
     background-image: url('../../sprites/tomato.svg'), url('../../sprites/olive.svg');
-    background-position: left top, right top; 
+    background-position: left top, right top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 20%, 15%; 
+    background-size: 20%, 15%;
     position: relative;
     background-color: linear-gradient(180deg, #f75b39 0%, #ff9f1a 100%);
 }
@@ -16,43 +16,70 @@
     line-height: 71.14px;
     height: 100%;
     color: white;
-    
+
     text-align: center;
 }
 
-.logo {
-    margin-top: 12%; 
-    padding-left: 12%; 
-    padding-right: 12%;
+@media (min-width: 768px) {
+    .trigo {
+        width: 200px;
+        height: 500px;
+        flex-shrink: 0;
+        position: relative;
+        bottom: 425px;
+    }
+
+    .logo {
+        margin-top: 12%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
 }
 
 @media (max-width: 768px) {
     .headerContainer {
-        background-size: 30%, 17%; 
+        background-size: 30%, 17%;
         background-position: left top, right top;
     }
 
     .logo {
-        margin-top: 27%; 
-        padding-left: 3%; 
+        margin-top: 27%;
+        padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .trigo {
+        width: 150px;
+        height: 400px;
+        flex-shrink: 0;
+        position: relative;
+        bottom: 350px;
     }
 }
 
 @media (max-width: 420px) {
     .headerContainer {
-        background-size: 40%, 20%; 
+        background-size: 40%, 20%;
         background-position: left top, right top;
 
     }
 
     .logo {
-        margin-top: 27%; 
-        padding-left: 3%; 
+        margin-top: 27%;
+        padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .trigo {
+        width: 100px;
+        height: 300px;
+        flex-shrink: 0;
+        position: relative;
+        bottom: 250px;
     }
 }
 
-.calendar{
+
+.calendar {
     margin-right: 10px;
 }

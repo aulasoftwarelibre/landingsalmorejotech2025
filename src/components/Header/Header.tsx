@@ -2,6 +2,7 @@ import styles from "./Header.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../sprites/logo.svg"
+import trigo from "../../sprites/trigo.svg"
 
 
 export default function Header() {
@@ -22,10 +23,12 @@ export default function Header() {
                 </div>
                 <div className="pt-4">
                     <p className={`${styles.logoContainer}`}>
-                    <button>Call4Paper</button>
+                        <button>Call4Paper</button>
                     </p>
                 </div>
-
+                <div className={`${styles.trigo}`}>
+                    <img src={trigo} className="img-fluid" alt="trigo" />
+                </div>
             </div>
         </>
     );
