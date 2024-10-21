@@ -1,5 +1,52 @@
-.FooterContainer{
-    width: 100%;
-    height: 100%;
-    margin-top: auto;
+.footerContainer {
+    background-image: url('../../sprites/footer.svg');
+    background-size: cover;
+    padding: 0px;
+    height: 500px;
+    align-items: flex-end;
+
+}
+
+.title {
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
 }

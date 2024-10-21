@@ -1,10 +1,22 @@
 import styles from "./Footer.module.css";
-import image from "../../sprites/footer.svg"
+import logo from "../../sprites/logoAula.png"; // Importing the logo image
 
 export default function Footer() {
   return (
-    <>
-      <img src={image} className={`${styles.FooterContainer} img-fluid mb-4 `} />
-    </>
+    <footer className={styles.footerContainer}>
+      <div className={styles.footerContent}>
+        <div className={styles.title}>
+          Organiza:
+        </div>
+        <div className="row">
+          <div className="col">
+            <img src={logo} className={styles.logo} alt="Aula Software Libre" />
+          </div>
+          <div className="col">
+
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
