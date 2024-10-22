@@ -5,6 +5,11 @@ import logo from "../../sprites/logo.svg"
 
 
 export default function Header() {
+
+    function handleClick2() {
+        window.location.href = "https://es.lipsum.com/";
+      }
+
     return (
         <>
             <div className={`${styles.headerContainer}`}>
@@ -22,7 +27,7 @@ export default function Header() {
                 </div>
                 <div className="pt-4">
                     <p className={`${styles.logoContainer}`}>
-                    <button>Call4Paper</button>
+                    <button className={`${styles.buttonInicio}`} onClick={handleClick2} >Call4Papers</button>
                     </p>
                 </div>
 
