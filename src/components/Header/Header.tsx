@@ -17,8 +17,14 @@ export default function Header() {
                         <FontAwesomeIcon icon={faCalendar} className={`${styles.calendar}`} />
                         9 DE MAYO
                     </h1>
-                    <h1 className={`${styles.logoContainer}`}>
-                        VUELVE CON MÁS FUERZA QUE NUNCA EL GRAN EVENTO TECNOLÓGICO CORDOBÉS
+                    <h1 className="row">
+                        <h1 className="col-1"></h1>
+                        <h1 className="col-10">
+                            <h1 className={`${styles.logoContainer}`}>
+                                VUELVE CON MÁS FUERZA QUE NUNCA EL GRAN EVENTO TECNOLÓGICO CORDOBÉS
+                            </h1>
+                        </h1>
+                        <h1 className="col-1"></h1>
                     </h1>
                 </div>
                 <div className="pt-4">
@@ -27,7 +33,9 @@ export default function Header() {
                     </p>
                 </div>
                 <div className={`${styles.trigo}`}>
-                    <img src={trigo} className="img-fluid" alt="trigo" />
+                    <h1 className="col-3">
+                        <img src={trigo} className="img-fluid" alt="trigo" />
+                    </h1>
                 </div>
             </div>
         </>

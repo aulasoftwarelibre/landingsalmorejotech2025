@@ -8,25 +8,26 @@
 }
 
 .logoContainer {
+    color: rgba(255, 255, 255, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    line-height: 71.14px;
+    font-family: Oswald;
+    font-size: auto;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 75px;
     height: 100%;
     color: white;
 
     text-align: center;
 }
 
+
 @media (min-width: 768px) {
     .trigo {
-        width: 200px;
-        height: 500px;
-        flex-shrink: 0;
         position: relative;
-        bottom: 425px;
+        bottom: 515px;
     }
 
     .logo {
@@ -37,6 +38,11 @@
 }
 
 @media (max-width: 768px) {
+    .trigo {
+        position: relative;
+        bottom: 350px;
+    }
+
     .headerContainer {
         background-size: 30%, 17%;
         background-position: left top, right top;
@@ -48,13 +54,6 @@
         padding-right: 3%;
     }
 
-    .trigo {
-        width: 150px;
-        height: 400px;
-        flex-shrink: 0;
-        position: relative;
-        bottom: 350px;
-    }
 }
 
 @media (max-width: 420px) {
@@ -70,16 +69,10 @@
         padding-right: 3%;
     }
 
-    .trigo {
-        width: 100px;
-        height: 300px;
-        flex-shrink: 0;
-        position: relative;
-        bottom: 250px;
-    }
 }
 
 
 .calendar {
     margin-right: 10px;
+    font-weight: 300;
 }
