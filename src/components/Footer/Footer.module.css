@@ -1,10 +1,12 @@
 .footerContainer {
     background-image: url('../../sprites/footer.svg');
     background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
     height: 500px;
-    align-items: flex-end;
-
 }
 
 .title {
@@ -14,14 +16,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.footerContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 80px;
-    padding-bottom: 50px;
-    
 }
 
 .logo {
@@ -34,6 +28,7 @@
 @media (max-width: 768px) {
     .footerContainer {
         padding: 15px;
+        height: auto;
     }
 
     .logo {
@@ -44,6 +39,7 @@
 @media (max-width: 480px) {
     .footerContainer {
         padding: 10px;
+        height: auto;
     }
 
     .logo {
