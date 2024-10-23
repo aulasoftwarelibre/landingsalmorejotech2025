@@ -2,9 +2,16 @@ import styles from "./Header.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../sprites/logo.svg"
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Header() {
+
+    const navigate = useNavigate();
+    const handleButton = () => {
+      navigate('/call4paper');
+    };
+
     return (
         <>
             <div className={`${styles.headerContainer}`}>
@@ -22,7 +29,7 @@ export default function Header() {
                 </div>
                 <div className="pt-4">
                     <p className={`${styles.logoContainer}`}>
-                    <button>Call4Paper</button>
+                    <button onClick={handleButton}>Call4Paper</button>
                     </p>
                 </div>
 
