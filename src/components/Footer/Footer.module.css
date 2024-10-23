@@ -10,7 +10,7 @@
     height: 100%;
     flex-shrink: 0;
     padding-top: 15rem !important;
-    
+
 }
 
 .tamanoFooter {
@@ -19,14 +19,72 @@
     text-align: center;
 }
 
+
+@media (max-width: 576px) {
+    .movableDivLeft {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateY(100px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .movableDivRight {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateY(100px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .moved {
+        transform: translateY(0px);
+        /* Moves the div 300px to the right */
+    }
+    .movedLeft {
+        transform: translateY(0px);
+        /* Moves the div 300px to the right */
+    }
+}
+
+@media (min-width: 577px) {
+    .movableDivLeft {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateX(-200px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .movableDivRight {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateX(200px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .moved {
+        transform: translateX(0px);
+        /* Moves the div 300px to the right */
+    }
+    .movedLeft {
+        transform: translateX(0px);
+        /* Moves the div 300px to the right */
+    }
+}
+
+
+
+
 .logo {
     max-width: 100%;
     height: auto;
     width: 200px;
     margin-top: 10px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 @media (max-width: 768px) {
