@@ -1,10 +1,9 @@
 .headerContainer {
-    background-image: url('../../sprites/tomato.svg'), url('../../sprites/olive.svg');
-    background-position: left top, right top;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 20%, 15%;
+    background-size: 15%;
     position: relative;
     background-color: linear-gradient(180deg, #f75b39 0%, #ff9f1a 100%);
+    margin-top: 1%;
+    margin-right: 3%;
 }
 
 .logoContainer {
@@ -13,61 +12,194 @@
     justify-content: center;
     align-items: center;
     font-family: Oswald;
-    font-size: auto;
+    font-size: 230%;
     font-style: normal;
     font-weight: 200;
     line-height: 75px;
-    height: 100%;
     color: white;
-
     text-align: center;
 }
 
+@media (min-width: 1400px) {
+    .ajo {
+        position: relative;
+        right: 35%;
+        bottom: 125px;
+        margin-top: 17%;
+    }
 
-@media (min-width: 768px) {
     .trigo {
         position: relative;
         bottom: 515px;
     }
 
     .logo {
-        margin-top: 12%;
+        margin-top: 0%;
         padding-left: 12%;
         padding-right: 12%;
     }
+
+    .tomato {
+        margin-top: 1%;
+        width: 20vw;
+        height: auto;
+    }
+
+    .wifi {
+        margin-top: 5%;
+        width: 80%;
+        height: auto;
+        margin-left: 12%;
+    }
+
+    .penguin {
+        position: relative;
+        bottom: 20%;
+        right: 10%;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .trigo {
         position: relative;
         bottom: 350px;
     }
 
-    .headerContainer {
-        background-size: 30%, 17%;
-        background-position: left top, right top;
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 180%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .ajo {
+        position: relative;
+        width: 90%;
+        height: auto;
+        right: 15%;
+        bottom: 25%;
+    }
+
+    .penguin {
+        position: relative;
+        width: 90%;
+        height: auto;
+        right: 5%;
+        bottom: 15%;
     }
 
     .logo {
-        margin-top: 27%;
+        margin-top: 0%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .wifi {
+        margin-top: 5%;
+        margin-right: 12%;
+        width: 90%;
+        height: auto;
+    }
+
+    .tomato {
+        margin-top: 1%;
+        width: 25vw;
+        height: auto;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .trigo {
+        position: relative;
+        bottom: 325px;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 130%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .tomato {
+        width: 150%;
+        height: auto;
+    }
+
+    .ajo {
+        position: relative;
+        left: 60px;
+        bottom: 165px;
+    }
+
+    .headerContainer {
+        background-size: 30%;
+        margin-top: 0%;
+        background-position: left top, right top;
+        background-position: top right;
+    }
+
+    .logo {
+        margin-top: 6%;
         padding-left: 3%;
         padding-right: 3%;
     }
 
+    .tomato {
+        margin-top: 1%;
+        width: 114%;
+        height: auto;
+    }
+
+    .wifi {
+        margin-top: 8%;
+        margin-left: -35%;
+        width: 125%;
+        height: auto;
+    }
 }
+
+
 
 @media (max-width: 420px) {
     .headerContainer {
         background-size: 40%, 20%;
         background-position: left top, right top;
+        background-position: top right;
 
     }
 
     .logo {
-        margin-top: 27%;
+        margin-top: 6%;
         padding-left: 3%;
         padding-right: 3%;
     }
+
+    .tomato {
+        margin-top: 2%;
+    }
+
+    .wifi {
+        margin-top: 12%;
+    }
+
 
 }
 
