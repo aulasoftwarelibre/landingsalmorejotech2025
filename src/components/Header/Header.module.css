@@ -6,31 +6,99 @@
     margin-right: 3%;
 }
 
-.logoContainer {
-    color: rgba(255, 255, 255, 0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Oswald;
-    font-size: 230%;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 75px;
-    color: white;
-    text-align: center;
-}
 
-@media (min-width: 1400px) {
+@media (min-width:2000px) {
     .ajo {
         position: relative;
         right: 35%;
-        bottom: 125px;
-        margin-top: 17%;
+        bottom: 15%;
+        width: 75%;
+        height: auto;
     }
 
     .trigo {
         position: relative;
-        bottom: 425px;
+        bottom: 75%;
+        width: 80%;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .tomato {
+        margin-top: 1%;
+        width: 20vw;
+        height: auto;
+    }
+
+    .wifi {
+        position: relative;
+        top: 5%;
+        width: 85%;
+        height: auto;
+        left: 27%;
+    }
+
+    .penguin {
+        position: relative;
+        bottom: 20%;
+        right: 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 2dvw;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 4dvw;
+        color: white;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 2000px) {
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: Oswald;
+        font-size: 230%;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 75px;
+        color: white;
+        text-align: center;
+    }
+
+    .ajo {
+        position: relative;
+        right: 35%;
+        bottom: 40%;
+        margin-top: 17%;
+        width: 85%;
+        height: auto;
+    }
+
+    .trigo {
+        position: relative;
+        bottom: 75%;
+        width: 85%;
+        height: auto;
     }
 
     .logo {
@@ -46,24 +114,31 @@
     }
 
     .wifi {
-        margin-top: 5%;
+        position: relative;
+        top: 5%;
         width: 80%;
         height: auto;
-        margin-left: 12%;
+        left: 33%;
     }
 
     .penguin {
         position: relative;
-        bottom: 20%;
+        bottom: 25%;
         right: 10%;
+        width: 85%;
+        height: auto;
     }
+
+
 
 }
 
 @media (max-width: 1400px) {
     .trigo {
         position: relative;
-        bottom: 350px;
+        bottom: 80%;
+        width: 85%;
+        height: auto;
     }
 
     .logoContainer {
@@ -85,15 +160,15 @@
         width: 90%;
         height: auto;
         right: 25%;
-        bottom: 15%;
+        bottom: 45%;
     }
 
     .penguin {
         position: relative;
         width: 90%;
         height: auto;
-        right: 5%;
-        bottom: 15%;
+        right: 15%;
+        bottom: 35%;
     }
 
     .logo {
@@ -103,8 +178,8 @@
     }
 
     .wifi {
-        margin-top: 5%;
-        margin-right: 12%;
+        position: relative;
+        left: 19%;
         width: 90%;
         height: auto;
     }
@@ -118,10 +193,13 @@
 
 
 
+
 @media (max-width: 768px) {
     .trigo {
         position: relative;
-        bottom: 325px;
+        bottom: 80%;
+        width: 100%;
+        height: auto;
     }
 
     .logoContainer {
@@ -130,12 +208,16 @@
         justify-content: center;
         align-items: center;
         font-family: Oswald;
-        font-size: 160%;
+        font-size: 155%;
         font-style: normal;
         font-weight: 150;
-        line-height: 50px;
+        line-height: 40px;
         color: white;
         text-align: center;
+    }
+
+    button {
+        z-index: 1000;
     }
 
     .tomato {
@@ -144,9 +226,10 @@
     }
 
     .ajo {
-        margin-right: 0%;
-        margin-bottom: 300%;
-        width: 115%;
+        position: relative;
+        right: 40%;
+        bottom: 50%;
+        width: 100%;
         height: auto;
     }
 
@@ -158,7 +241,7 @@
     }
 
     .logo {
-        margin-top: 6%;
+        margin-top: 1%;
         padding-left: 3%;
         padding-right: 3%;
     }
@@ -169,24 +252,26 @@
         height: auto;
     }
 
-    .wifi {
-        margin-top: 8%;
-        margin-left: -35%;
-        width: 125%;
-        height: auto;
-    }
-    .penguin{
+
+    .penguin {
         margin-top: 150%;
+    }
+
+    .penguintop {
+        width: 160%;
+        height: auto;
+        position: relative;
+        right: 0%;
     }
 }
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 576px) {
 
 
     .logo {
-        margin-top: 6%;
+        margin-top: 0%;
         padding-left: 3%;
         padding-right: 3%;
     }
@@ -195,10 +280,14 @@
         margin-top: 2%;
     }
 
-    .wifi {
-        margin-top: 12%;
+    .penguintop {
+        position: relative;
+        right: 60%;
+        bottom: 80%;
+        width: 325%;
+        height: auto;
     }
-    
+
     .logoContainer {
         color: rgba(255, 255, 255, 0.75);
         display: flex;
@@ -208,14 +297,68 @@
         font-size: 120%;
         font-style: normal;
         font-weight: 150;
-        line-height: 50px;
+        line-height: 30px;
         color: white;
         text-align: center;
     }
 
+    .trigo {
+        position: relative;
+        bottom: 85%;
+        width: 110%;
+        height: auto;
+    }
+
+    .ajo {
+        position: relative;
+        right: 50%;
+        bottom: 50%;
+        width: 150%;
+        height: auto;
+    }
 
 }
 
+
+@media (max-width: 343px) {
+    .penguintop {
+        position: relative;
+        right: 75%;
+        bottom: 45%;
+        width: 375%;
+        height: auto;
+    }
+
+    .trigo {
+        position: relative;
+        bottom: 110%;
+        width: 120%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 100%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 25px;
+        color: white;
+        text-align: center;
+    }
+
+    .ajo {
+        position: relative;
+        right: 65%;
+        bottom: 60%;
+        width: 180%;
+        height: auto;
+    }
+
+}
 
 .calendar {
     margin-right: 10px;
