@@ -36,8 +36,8 @@ export default function Header() {
                     </h1>
 
                     <div className="row">
-                        <div className="col-xxl-1 col-md-2 col-3"></div>
-                        <div className="col-xxl-10 col-md-8 col-6">
+                        <div className="col-xxl-1 col-md-2 col-1"></div>
+                        <div className="col-xxl-10 col-md-8 col-10">
                             <p className={`${styles.logoContainer}`}>
                                 VUELVE CON MÁS FUERZA QUE NUNCA EL GRAN EVENTO TECNOLÓGICO CORDOBÉS
                             </p>

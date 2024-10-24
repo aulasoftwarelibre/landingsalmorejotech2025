@@ -30,7 +30,7 @@
 
     .trigo {
         position: relative;
-        bottom: 515px;
+        bottom: 425px;
     }
 
     .logo {
@@ -72,7 +72,7 @@
         justify-content: center;
         align-items: center;
         font-family: Oswald;
-        font-size: 180%;
+        font-size: 215%;
         font-style: normal;
         font-weight: 150;
         line-height: 50px;
@@ -84,8 +84,8 @@
         position: relative;
         width: 90%;
         height: auto;
-        right: 15%;
-        bottom: 25%;
+        right: 25%;
+        bottom: 15%;
     }
 
     .penguin {
@@ -130,7 +130,7 @@
         justify-content: center;
         align-items: center;
         font-family: Oswald;
-        font-size: 130%;
+        font-size: 160%;
         font-style: normal;
         font-weight: 150;
         line-height: 50px;
@@ -144,9 +144,10 @@
     }
 
     .ajo {
-        position: relative;
-        left: 60px;
-        bottom: 165px;
+        margin-right: 0%;
+        margin-bottom: 300%;
+        width: 115%;
+        height: auto;
     }
 
     .headerContainer {
@@ -174,17 +175,15 @@
         width: 125%;
         height: auto;
     }
+    .penguin{
+        margin-top: 150%;
+    }
 }
 
 
 
 @media (max-width: 420px) {
-    .headerContainer {
-        background-size: 40%, 20%;
-        background-position: left top, right top;
-        background-position: top right;
 
-    }
 
     .logo {
         margin-top: 6%;
@@ -198,6 +197,20 @@
 
     .wifi {
         margin-top: 12%;
+    }
+    
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 120%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 50px;
+        color: white;
+        text-align: center;
     }
 
 
