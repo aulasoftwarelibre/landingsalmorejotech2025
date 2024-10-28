@@ -1,57 +1,360 @@
-.headerContainer {
-    background-image: url('../../sprites/tomato.svg'), url('../../sprites/olive.svg');
-    background-position: left top, right top; 
-    background-repeat: no-repeat, no-repeat;
-    background-size: 20%, 15%; 
-    position: relative;
+
+@media (min-width:2000px) {
+    .ajo {
+        position: relative;
+        right: 35%;
+        bottom: 15%;
+        width: 75%;
+        height: auto;
+    }
+
+    .trigo {
+        position: relative;
+        bottom: 75%;
+        width: 80%;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .tomato {
+        margin-top: 1%;
+        width: 20vw;
+        height: auto;
+    }
+
+    .wifi {
+        position: relative;
+        top: 5%;
+        width: 85%;
+        height: auto;
+        left: 27%;
+    }
+
+    .penguin {
+        position: relative;
+        bottom: 20%;
+        right: 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 2dvw;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 4dvw;
+        color: white;
+        text-align: center;
+    }
 }
 
-.logoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    line-height: 71.14px;
-    height: 100%;
-    color: white;
-    
-    text-align: center;
+@media (max-width: 2000px) {
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: Oswald;
+        font-size: 230%;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 75px;
+        color: white;
+        text-align: center;
+    }
+
+    .ajo {
+        position: relative;
+        right: 35%;
+        bottom: 40%;
+        margin-top: 17%;
+        width: 85%;
+        height: auto;
+    }
+
+    .trigo {
+        position: relative;
+        bottom: 75%;
+        width: 85%;
+        height: auto;
+    }
+
+    .logo {
+        margin-top: 0%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .tomato {
+        margin-top: 1%;
+        width: 20vw;
+        height: auto;
+    }
+
+    .wifi {
+        position: relative;
+        top: 5%;
+        width: 80%;
+        height: auto;
+        left: 33%;
+    }
+
+    .penguin {
+        position: relative;
+        bottom: 25%;
+        right: 10%;
+        width: 85%;
+        height: auto;
+    }
+
+
+
 }
 
-.logo {
-    margin-top: 12%; 
-    padding-left: 12%; 
-    padding-right: 12%;
+@media (max-width: 1400px) {
+    .trigo {
+        position: relative;
+        bottom: 80%;
+        width: 85%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 215%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .ajo {
+        position: relative;
+        width: 90%;
+        height: auto;
+        right: 25%;
+        bottom: 45%;
+    }
+
+    .penguin {
+        position: relative;
+        width: 90%;
+        height: auto;
+        right: 15%;
+        bottom: 35%;
+    }
+
+    .logo {
+        margin-top: 0%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .wifi {
+        position: relative;
+        left: 19%;
+        width: 90%;
+        height: auto;
+    }
+
+    .tomato {
+        margin-top: 1%;
+        width: 25vw;
+        height: auto;
+    }
 }
+
+
+
 
 @media (max-width: 768px) {
+    .trigo {
+        position: relative;
+        bottom: 80%;
+        width: 100%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 155%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 40px;
+        color: white;
+        text-align: center;
+    }
+
+    button {
+        z-index: 1000;
+    }
+
+    .tomato {
+        width: 150%;
+        height: auto;
+    }
+
+    .ajo {
+        position: relative;
+        right: 40%;
+        bottom: 50%;
+        width: 100%;
+        height: auto;
+    }
+
     .headerContainer {
-        background-size: 30%, 17%; 
+        background-size: 30%;
+        max-width: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+        margin-top: 0%;
         background-position: left top, right top;
+        background-position: top right;
     }
 
     .logo {
-        margin-top: 27%; 
-        padding-left: 3%; 
+        margin-top: 1%;
+        padding-left: 3%;
         padding-right: 3%;
+    }
+
+    .tomato {
+        margin-top: 1%;
+        width: 114%;
+        height: auto;
+    }
+
+
+    .penguin {
+        margin-top: 150%;
+    }
+
+    .penguintop {
+        width: 160%;
+        height: auto;
+        position: relative;
+        right: 0%;
     }
 }
 
-@media (max-width: 420px) {
-    .headerContainer {
-        background-size: 40%, 20%; 
-        background-position: left top, right top;
 
-    }
+
+@media (max-width: 576px) {
+
 
     .logo {
-        margin-top: 27%; 
-        padding-left: 3%; 
+        margin-top: 0%;
+        padding-left: 3%;
         padding-right: 3%;
     }
+
+    .tomato {
+        margin-top: 2%;
+    }
+
+    .penguintop {
+        position: relative;
+        right: 60%;
+        bottom: 80%;
+        width: 325%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 120%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 30px;
+        color: white;
+        text-align: center;
+    }
+
+    .trigo {
+        position: relative;
+        bottom: 85%;
+        width: 110%;
+        height: auto;
+    }
+
+    .ajo {
+        position: relative;
+        right: 50%;
+        bottom: 50%;
+        width: 150%;
+        height: auto;
+    }
+
 }
 
-.calendar{
+
+@media (max-width: 343px) {
+    .penguintop {
+        position: relative;
+        right: 75%;
+        bottom: 45%;
+        width: 375%;
+        height: auto;
+    }
+
+    .trigo {
+        position: relative;
+        bottom: 110%;
+        width: 120%;
+        height: auto;
+    }
+
+    .logoContainer {
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        font-size: 100%;
+        font-style: normal;
+        font-weight: 150;
+        line-height: 25px;
+        color: white;
+        text-align: center;
+    }
+
+    .ajo {
+        position: relative;
+        right: 65%;
+        bottom: 60%;
+        width: 180%;
+        height: auto;
+    }
+
+}
+
+.calendar {
     margin-right: 10px;
+    font-weight: 300;
 }
