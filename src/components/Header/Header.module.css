@@ -1,8 +1,8 @@
 .headerContainer {
     background-image: url('../../sprites/tomato.svg'), url('../../sprites/olive.svg');
-    background-position: left top, right top; 
+    background-position: left top, right top;
     background-repeat: no-repeat, no-repeat;
-    background-size: 20%, 15%; 
+    background-size: 20%, 15%;
     position: relative;
     background-color: linear-gradient(180deg, #f75b39 0%, #ff9f1a 100%);
 }
@@ -19,94 +19,94 @@
     text-align: center;
 }
 
-.buttonInicio{
+
+.buttonInicio {
+    display: block;
+    align-items: center;
     justify-content: center;
-    width: 477px;
-    height: 113px;
-    flex-shrink:0;
-    border-radius: 50px;
-    border: 10px solid #FFF;
+    border-radius: 80px;
     background: rgba(204, 35, 101, 0.38);
     color: #FFF;
-    text-align: center;
-    font-size: 48px;
     font-family: "Oswald", sans-serif;
     font-weight: 350;
     line-height: normal;
-
-}
-
-button {
-    padding: 0.8em 1.8em;
-    border: 2px solid #17C3B2;
+    width: 477px;
+    height: 10vh;
+    border: 10px solid #FFF;
     position: relative;
     overflow: hidden;
     background-color: transparent;
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 3.5vh;
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: #17C3B2;
-   }
-   
-   button::before {
+    color: #FFF;
+}
+
+.buttonInicio::before {
     content: '';
     width: 0;
-    height: 300%;
+    height: 500%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 00%;
+    left: 59%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #17C3B2;
+    background: #992a11;
     transition: .5s ease;
     display: block;
     z-index: -1;
-   }
-   
-   button:hover::before {
-    width: 105%;
-   }
-   
-   button:hover {
-    color: #111;
-   }
-   
+}
+
+.buttonInicio:hover::before {
+    width: 100%;
+}
+
+.buttonInicio:hover {
+    color: #FFF;
+}
+
 
 .logo {
-    margin-top: 12%; 
-    padding-left: 12%; 
+    margin-top: 12%;
+    padding-left: 12%;
     padding-right: 12%;
 }
 
 @media (max-width: 768px) {
     .headerContainer {
-        background-size: 30%, 17%; 
+        background-size: 30%, 17%;
         background-position: left top, right top;
     }
 
     .logo {
-        margin-top: 27%; 
-        padding-left: 3%; 
+        margin-top: 27%;
+        padding-left: 3%;
         padding-right: 3%;
     }
+
+  
 }
 
 @media (max-width: 420px) {
     .headerContainer {
-        background-size: 40%, 20%; 
+        background-size: 40%, 20%;
         background-position: left top, right top;
 
     }
 
+    .buttonInicio {
+        width: 80%;
+    }
+
     .logo {
-        margin-top: 27%; 
-        padding-left: 3%; 
+        margin-top: 27%;
+        padding-left: 3%;
         padding-right: 3%;
     }
 }
 
-.calendar{
+.calendar {
     margin-right: 10px;
 }
