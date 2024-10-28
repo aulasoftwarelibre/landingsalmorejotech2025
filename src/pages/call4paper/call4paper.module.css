@@ -1,0 +1,112 @@
+.mainText {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: clamp(1rem, 6vw, 3rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.secondaryText {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.formText {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: clamp(1rem, 4vw, 2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+@media (max-width: 576px){
+    .form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        height: 100vh;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: rgba(217, 217, 217, 0.30);
+        backdrop-filter: blur(5px);
+    }
+
+    .inputForm {
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-bottom: 40px;
+        width: 90%;
+        border: none;
+        height: 30px;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #E9715E;
+        font-family: Oswald;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+    }
+    
+    .inputForm::placeholder {
+        color: #E9715E;
+        font-family: Oswald;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    
+}
+@media (min-width: 576px){
+.form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    height: 100vh;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: rgba(217, 217, 217, 0.30);
+    backdrop-filter: blur(5px);
+}
+
+.inputForm {
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    width: 90%;
+    border: none;
+    height: 60px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #E9715E;
+    font-family: Oswald;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.inputForm::placeholder {
+    color: #E9715E;
+    font-family: Oswald;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+}
+
+

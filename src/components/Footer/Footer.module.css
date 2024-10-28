@@ -1,0 +1,111 @@
+.fondoblancoabajo {
+    background: url('../../sprites/fondoblancoabajo.svg') center/cover no-repeat;
+    height: 30vh;
+}
+
+.fondo1 {
+    background: url('../../sprites/footer.svg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+    height: 100%;
+    flex-shrink: 0;
+    padding-top: 15rem !important;
+
+}
+
+.tamanoFooter {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 576px) {
+    .movableDivLeft {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateY(100px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .movableDivRight {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateY(100px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .moved {
+        transform: translateY(0px);
+        /* Moves the div 300px to the right */
+    }
+    .movedLeft {
+        transform: translateY(0px);
+        /* Moves the div 300px to the right */
+    }
+}
+
+@media (min-width: 577px) {
+    .movableDivLeft {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateX(-200px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .movableDivRight {
+        position: relative;
+        transition: transform 1.5s ease-out;
+        transform: translateX(200px);
+        /* Adjust the duration and easing as needed */
+    }
+
+    .moved {
+        transform: translateX(0px);
+        /* Moves the div 300px to the right */
+    }
+    .movedLeft {
+        transform: translateX(0px);
+        /* Moves the div 300px to the right */
+    }
+}
+
+
+
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    .tamanoFooter {
+        margin-top: 20px;
+    }
+}

@@ -7,9 +7,16 @@ import penguin from "../../sprites/penguin.svg"
 import ajo from "../../sprites/ajo.svg"
 import tomato from "../../sprites/tomato.svg"
 import wifi from "../../sprites/wifi.svg"
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Header() {
+
+    const navigate = useNavigate();
+    const handleButton = () => {
+      navigate('/call4paper');
+    };
+
     return (
         <>
             <div className={`${styles.headerContainer}`}>
@@ -48,7 +55,7 @@ export default function Header() {
                 </div>
                 <div className="pt-4">
                     <p className={`${styles.logoContainer}`}>
-                        <button>Call4Paper</button>
+                      <button onClick={handleButton}>Call4Paper</button>
                     </p>
                 </div>
                 <h1 className="row">
