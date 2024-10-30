@@ -54,11 +54,10 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="pt-4">
-                    <p className={`${styles.logoContainer}`}>
-                      <button onClick={handleButton}>Call4Paper</button>
+                <p className={`${styles.logoContainer}`}>
+                    <button className={`${styles.buttonInicio}`} onClick={handleButton} >Call4Papers</button>
                     </p>
                 </div>
-                
                 <h1 className={`row ${styles.logos}`}>
                     <h1 className="col-3">
                         <div className={`${styles.trigo}`}>
@@ -67,7 +66,7 @@ export default function Header() {
                     </h1>
                     <h1 className="col-3">
                         <div className={`${styles.penguin}`}>
-                            <img src={penguin} className={`${styles.penguin} d-md-inline d-none`} alt="penguin" />
+                            <img src={penguin} className={`${styles.penguin} d-inline d-none`} alt="penguin" />
                         </div>
                     </h1>
                     <h1 className="col-3"></h1>
