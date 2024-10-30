@@ -10,7 +10,9 @@
     height: 100%;
     flex-shrink: 0;
     padding-top: 15rem !important;
-
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: -300px !important;
 }
 
 .tamanoFooter {
@@ -19,56 +21,6 @@
     text-align: center;
 }
 
-
-@media (max-width: 576px) {
-    .movableDivLeft {
-        position: relative;
-        transition: transform 1.5s ease-out;
-        transform: translateY(100px);
-        /* Adjust the duration and easing as needed */
-    }
-
-    .movableDivRight {
-        position: relative;
-        transition: transform 1.5s ease-out;
-        transform: translateY(100px);
-        /* Adjust the duration and easing as needed */
-    }
-
-    .moved {
-        transform: translateY(0px);
-        /* Moves the div 300px to the right */
-    }
-    .movedLeft {
-        transform: translateY(0px);
-        /* Moves the div 300px to the right */
-    }
-}
-
-@media (min-width: 577px) {
-    .movableDivLeft {
-        position: relative;
-        transition: transform 1.5s ease-out;
-        transform: translateX(-200px);
-        /* Adjust the duration and easing as needed */
-    }
-
-    .movableDivRight {
-        position: relative;
-        transition: transform 1.5s ease-out;
-        transform: translateX(200px);
-        /* Adjust the duration and easing as needed */
-    }
-
-    .moved {
-        transform: translateX(0px);
-        /* Moves the div 300px to the right */
-    }
-    .movedLeft {
-        transform: translateX(0px);
-        /* Moves the div 300px to the right */
-    }
-}
 
 
 

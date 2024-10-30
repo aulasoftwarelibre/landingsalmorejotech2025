@@ -1,4 +1,6 @@
 body {
-    height: 150vh;
+    max-height: 100%;
     background: linear-gradient(180deg, #5811FF -88.45%, #F02835 9.49%, #EF641D 46.99%, #F3A758 100%);  
+    max-width: 100%;
+    overflow-x: hidden;
 }

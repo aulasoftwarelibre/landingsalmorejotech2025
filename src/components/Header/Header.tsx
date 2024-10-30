@@ -43,7 +43,7 @@ export default function Header() {
                         <FontAwesomeIcon icon={faCalendar} className={`${styles.calendar}`} />
                         9 DE MAYO
                     </h1>
-
+                
                     <div className="row">
                         <div className="col-xxl-1 col-md-2 col-1"></div>
                         <div className="col-xxl-10 col-md-8 col-10">
@@ -58,7 +58,8 @@ export default function Header() {
                       <button onClick={handleButton}>Call4Paper</button>
                     </p>
                 </div>
-                <h1 className="row">
+                
+                <h1 className={`row ${styles.logos}`}>
                     <h1 className="col-3">
                         <div className={`${styles.trigo}`}>
                             <img src={trigo} className={`${styles.trigo}`} alt="trigo" />
@@ -76,7 +77,9 @@ export default function Header() {
                         </div>
                     </h1>
                 </h1>
+               
             </div>
+            
         </>
     );
 }
