@@ -50,28 +50,28 @@
 @media (min-width: 577px) {
     .movableDivLeft {
         position: relative;
-        transition: transform 1.5s ease-out;
-        transform: translateX(-200px);
+        transition: transform 1s ease-out;
+        transform: translate3d(-150px, 200px, -150px);
         /* Adjust the duration and easing as needed */
     }
 
     .movableDivRight {
         position: relative;
-        transition: transform 1.5s ease-out;
-        transform: translateX(200px);
+        transition: transform 1s ease-out;
+        transform: translate3d(150px, 200px, 150px);
+
         /* Adjust the duration and easing as needed */
     }
-
+    
     .moved {
-        transform: translateX(0px);
+        transform: translate3d(0px, 0px, 0px);
         /* Moves the div 300px to the right */
     }
     .movedLeft {
-        transform: translateX(0px);
+        transform: translate3d(0px, 0px, 0px);
         /* Moves the div 300px to the right */
     }
 }
-
 
 
 .logo {

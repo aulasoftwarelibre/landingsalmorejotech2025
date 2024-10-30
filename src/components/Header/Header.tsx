@@ -8,14 +8,107 @@ import ajo from "../../sprites/ajo.svg"
 import tomato from "../../sprites/tomato.svg"
 import wifi from "../../sprites/wifi.svg"
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 
 export default function Header() {
 
     const navigate = useNavigate();
     const handleButton = () => {
-      navigate('/call4paper');
+        navigate('/call4paper');
     };
+
+    const [isMoved, setIsMoved] = useState(false);
+    const [isMovedTomato, setIsMovedTomato] = useState(false);
+    const [isMovedText, setIsMovedText] = useState(false);
+    const [isMovedWifi, setIsMovedWifi] = useState(false);
+    const [isMovedPingu, setIsMovedPingu] = useState(false);
+    const [isMovedWheat, setIsMovedWheat] = useState(false);
+
+    const handleWheatScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 350) {
+            setIsMovedWheat(true);
+        } else {
+            setIsMovedWheat(false);
+        }
+    }
+
+
+    const handlePinguScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 350) {
+            setIsMovedPingu(true);
+        } else {
+            setIsMovedPingu(false);
+        }
+    }
+
+
+    const handleWifiScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 200) {
+            setIsMovedWifi(true);
+        } else {
+            setIsMovedWifi(false);
+        }
+    }
+
+    const handleTextScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 400) {
+            setIsMovedText(true);
+        } else {
+            setIsMovedText(false);
+        }
+    }
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > 350) {
+            setIsMoved(true);
+        } else {
+            setIsMoved(false);
+        }
+    };
+
+    const handleTomatoScroll = () => {
+        const scrollPosition = window.scrollY;
+
+        if(scrollPosition > 200){
+            setIsMovedTomato(true);
+        } else {
+            setIsMovedTomato(false);
+        }
+    }
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleTomatoScroll);
+        window.addEventListener('scroll', handleTextScroll);
+        window.addEventListener('scroll', handleWifiScroll);
+        window.addEventListener('scroll', handlePinguScroll);
+        window.addEventListener('scroll', handleWheatScroll);
+
+        
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleTomatoScroll);
+            window.removeEventListener('scroll', handleTextScroll);
+            window.removeEventListener('scroll', handleWifiScroll);
+            window.removeEventListener('scroll', handlePinguScroll);
+            window.removeEventListener('scroll', handleWheatScroll);
+
+
+        };
+    }, []);
 
     return (
         <>
@@ -23,12 +116,12 @@ export default function Header() {
                 <div className="row">
                     <div className="col-4">
                         <div className={`${styles.tomato}`}>
-                            <img src={tomato} className={`${styles.tomato}`} alt="tomato" />
+                            <img src={tomato} className={`${styles.tomato} ${isMovedTomato ? styles.moved3dtomato : ''}`}  alt="tomato" />
                         </div>
                     </div>
                     <div className="col-4"></div>
                     <div className="col-sm-3 col-2">
-                        <div className={`${styles.wifi}`}>
+                        <div className={`${styles.wifi} ${isMovedWifi ? styles.movedWifi : ''}`}>
                             <img src={wifi} className={`${styles.wifi} d-md-inline d-none`} alt="wifi" />
                             <img src={penguin} className={`${styles.penguintop} d-md-none d-inline`} alt="penguin" />
                         </div>
@@ -38,12 +131,12 @@ export default function Header() {
                     <img src={logo} className={`${styles.logo} img-fluid`} alt="logo" />
 
                 </div>
-                <div className="pt-4">
+                <div className={`pt-4 ${styles.normalText} ${isMovedText ? styles.movedText : ''}`}>
                     <h1 className={`${styles.logoContainer}`}>
                         <FontAwesomeIcon icon={faCalendar} className={`${styles.calendar}`} />
                         9 DE MAYO
                     </h1>
-                
+
                     <div className="row">
                         <div className="col-xxl-1 col-md-2 col-1"></div>
                         <div className="col-xxl-10 col-md-8 col-10">
@@ -54,31 +147,31 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="pt-4">
-                <p className={`${styles.logoContainer}`}>
-                    <button className={`${styles.buttonInicio}`} onClick={handleButton} >Call4Papers</button>
+                    <p className={`${styles.logoContainer}`}>
+                        <button className={`${styles.buttonInicio}`} onClick={handleButton} >Call4Papers</button>
                     </p>
                 </div>
                 <h1 className={`row ${styles.logos}`}>
                     <h1 className="col-3">
                         <div className={`${styles.trigo}`}>
-                            <img src={trigo} className={`${styles.trigo}`} alt="trigo" />
+                            <img src={trigo} className={`${styles.trigo} ${isMovedWheat ? styles.movedWheat : ''}`} alt="trigo" />
                         </div>
                     </h1>
                     <h1 className="col-3">
                         <div className={`${styles.penguin}`}>
-                            <img src={penguin} className={`${styles.penguin} d-inline d-none`} alt="penguin" />
+                            <img src={penguin} className={`${styles.penguin} ${isMovedPingu ? styles.movedPingu : ''} d-md-inline d-none`} alt="penguin" />
                         </div>
                     </h1>
                     <h1 className="col-3"></h1>
                     <h1 className="col-sm-3 col-2">
-                        <div className={`${styles.ajo}`}>
+                        <div className={`${styles.ajo} ${isMoved ? styles.movedRight : ''}`}>
                             <img src={ajo} className={`${styles.ajo}`} alt="ajo" />
                         </div>
                     </h1>
                 </h1>
-               
+
             </div>
-            
+
         </>
     );
 }

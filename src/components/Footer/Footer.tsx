@@ -20,7 +20,7 @@ export default function Footer() {
     const scrollPosition = window.scrollY;
 
     // Trigger the movement when the user scrolls down a certain amount (e.g., 200px)
-    if (scrollPosition > 200) {
+    if (scrollPosition > 400) {
       setIsMoved(true);
     } else {
       setIsMoved(false);
@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-12">
               <a href="https://www.facebook.com/AulaSoftwareLibre/" target="_blank" style={{ padding: "2%" }}>
-                <img src={facebook} alt="Facebook" style={{ width: "2em", height: "2em" }} />
+                <img src={facebook} alt="Facebook" className={styles.icon} style={{ width: "2em", height: "2em" }} />
               </a>
               <a href="https://www.instagram.com/aulasoftwarelibre/?hl=es" target="_blank" style={{ padding: "2%" }}>
                 <img src={instagram} alt="Instagram" style={{ width: "2em", height: "2em" }} />
@@ -103,7 +103,7 @@ export default function Footer() {
 
 
       </div>
-      <div className="row pb-3">
+      <div className={`row pb-3`}>
         <h4>© 2024 Aula Software Libre</h4>
       </div>
     </div>
