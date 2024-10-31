@@ -12,6 +12,7 @@
     padding-top: 15rem;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     margin-top: -300px;
 }
 
@@ -62,7 +63,7 @@
 
         /* Adjust the duration and easing as needed */
     }
-    
+
     .moved {
         transform: translate3d(0px, 0px, 0px);
         /* Moves the div 300px to the right */
