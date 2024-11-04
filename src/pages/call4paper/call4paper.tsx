@@ -1,8 +1,26 @@
-import { useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./call4paper.module.css";
+import { supabase } from "../../supabase/server";
 
 export default function Call4Paper() {
+
+    const handleUpdate = async(e: any) => {
+        e.preventDefault();
+
+        const { data, error } = await supabase
+            .from('call4paper')
+            .select()
+
+        if(error){
+            console.log("Data not displayed correctly", error);
+        }else{
+            console.log("Data displayed correctly", data);
+        }
+        
+
+    }
+
+
 
     return (
         <>
@@ -39,7 +57,7 @@ export default function Call4Paper() {
                     <option value="career">Career</option>
                     <option value="ux_ui">UX/UI</option>
                 </select>
-                <label>
+                <label className={`${styles.inputCheckbox}`}>
                     <input type="checkbox" name="recordingAllowed" />
                     Grabación Autorizada
                 </label>
@@ -54,22 +72,13 @@ export default function Call4Paper() {
                 <input type="text" name="nickname" placeholder="Nick/Alias" className={`${styles.inputForm}`} />
                 <textarea name="notes" placeholder="¿Algo que debamos tener en cuenta? (comida, intolerancias, etc.)" className={`${styles.inputFormArea}`}></textarea>
                 <input type="file" name="photo" className={`${styles.inputForm}`} />
-                <label>
-                    <input type="checkbox" name="needsAccommodation" />
-                    ¿Necesitas Alojamiento?
-                </label>
-                <label>
-                    <input type="checkbox" name="needsTransport" />
-                    ¿Necesitas Transporte?
-                </label>
-                <label>
-                    <input type="checkbox" name="reimburseTravel" />
-                    ¿Posibilidad de que reembolsen el gasto de viaje y transporte?
-                </label>
                 <textarea name="experience" placeholder="Experiencia Previa en Actividades del Estilo" className={`${styles.inputFormArea}`}></textarea>
                 <input type="text" name="socialMediaLinks" placeholder="Enlaces a RRSS" className={`${styles.inputForm}`} />
                 <input type="text" name="residence" placeholder="Municipio de Residencia Habitual" className={`${styles.inputForm}`} />
                 <input type="text" name="company" placeholder="Empresa de trabajo (y posibilidad de patrocinio)" className={`${styles.inputForm}`} />
+                <div className={`${styles.centerButton}`} >
+                <button className={`${styles.submitButton}`} onClick={handleUpdate}>Enviar</button>
+                </div>
             </div>
         </>
     );

@@ -28,6 +28,55 @@
     line-height: normal;
 }
 
+.inputCheckbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.inputCheckbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    background-color: #E9715E;
+}
+
+.centerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.submitButton{
+    background-color: #E9715E;
+    width: 200px;
+    border-radius: 20px;
+    height: 50px;
+    border: none;
+    font-family: Oswald;
+    font-weight: 400;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    line-height: 150%;
+    color: white;
+}
+
+.submitButton:hover{
+    color: #f24025;
+}
+
 
 
 @media (max-width: 1025px){
@@ -92,12 +141,16 @@
         font-style: normal;
         font-weight: 400;
     }
+
+    .inputCheckbox {
+        margin-bottom: 40px;
+    }
     
     
 }
 @media (min-width: 1025px){
 .form {
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
@@ -154,6 +207,10 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
+}
+
+.inputCheckbox {
+    margin-bottom: 40px;
 }
 
 
