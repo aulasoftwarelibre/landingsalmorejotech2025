@@ -159,7 +159,7 @@ export default function Header() {
                     </h1>
                     <h1 className="col-3">
                         <div className={`${styles.penguin}`}>
-                            <img src={penguin} className={`${styles.penguin} ${isMovedPingu ? styles.movedPingu : ''} d-md-inline d-none`} alt="penguin" />
+                            <img src={penguin} className={`${styles.penguin} ${isMovedPingu ? styles.movedPingu : ''} d-none d-md-block`} alt="penguin" />
                         </div>
                     </h1>
                     <h1 className="col-3"></h1>
