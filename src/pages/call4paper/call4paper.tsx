@@ -5,6 +5,8 @@ import { supabase } from "../../supabase/server";
 export default function Call4Paper() {
 
     const handleUpdate = async(e: any) => {
+     
+
         e.preventDefault();
 
         const { data, error } = await supabase
@@ -35,7 +37,7 @@ export default function Call4Paper() {
             </div>
             <div className={`${styles.form}`}>
                 <p className={`${styles.formText}`}>SOBRE LA ACTIVIDAD...</p>
-                <input type="text" name="title" placeholder="Título" className={`${styles.inputForm}`} />
+                <input type="text" name="title" placeholder="Título" className={`${styles.inputForm}`}/>
                 <select name="activityType" className={`${styles.inputForm}`}>
                     <option value="charla">Charla ~ 35 min</option>
                     <option value="keynote">Keynote ~ 1 hora</option>

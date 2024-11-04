@@ -22,6 +22,8 @@
     font-weight: 350;
     line-height: normal;
     width: 50vh;
+    max-width: 20vw;
+    max-height: 10vh;
     background: #E35843;
     height: 10vh;
     border: 5px solid #FFF;
@@ -39,7 +41,7 @@
 .buttonInicio::before {
     content: '';
     width: 0;
-    height: 1200px;
+    height: 1500px;
     position: absolute;
     top: 30%;
     right: 50%;
@@ -57,6 +59,8 @@
 .buttonInicio:hover {
     color: #FFF;
 }
+
+
 
 
 @media (min-width: 2500px) {
@@ -236,6 +240,11 @@
 }
 
 @media (max-width: 1400px) and (min-width: 768px){
+    .buttonInicio{
+        max-width: 45vw;
+        max-height: 20vh;
+    }
+
     .trigo {
         position: relative;
         bottom: 80%;
@@ -295,7 +304,11 @@
 }
 
 
+
 @media (max-width: 767px) and (min-width: 576px) {
+    .buttonInicio{
+        max-width: 50vw;
+    }
     .trigo {
         position: relative;
         bottom: 80%;
@@ -367,10 +380,10 @@
 }
 
 
-
-@media (max-width: 577px){
+@media (max-width: 575px){
     .buttonInicio{
         width: 40vh;
+        max-width: 70vw;
     }
 
     .logo {

@@ -95,8 +95,7 @@ export default function Header() {
         window.addEventListener('scroll', handleWifiScroll);
         window.addEventListener('scroll', handlePinguScroll);
         window.addEventListener('scroll', handleWheatScroll);
-
-        
+      
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -132,10 +131,10 @@ export default function Header() {
 
                 </div>
                 <div className={`pt-4 ${styles.normalText} ${isMovedText ? styles.movedText : ''}`}>
-                    <h1 className={`${styles.logoContainer}`}>
+                    <p className={`${styles.logoContainer}`}>
                         <FontAwesomeIcon icon={faCalendar} className={`${styles.calendar}`} />
                         9 DE MAYO
-                    </h1>
+                    </p>
 
                     <div className="row">
                         <div className="col-xxl-1 col-md-2 col-1"></div>
@@ -151,24 +150,24 @@ export default function Header() {
                         <button className={`${styles.buttonInicio}`} onClick={handleButton} >Call4Papers</button>
                     </p>
                 </div>
-                <h1 className={`row ${styles.logos}`}>
-                    <h1 className="col-3">
+                <div className={`row ${styles.logos}`}>
+                    <div className="col-3">
                         <div className={`${styles.trigo}`}>
                             <img src={trigo} className={`${styles.trigo} ${isMovedWheat ? styles.movedWheat : ''}`} alt="trigo" />
                         </div>
-                    </h1>
-                    <h1 className="col-3">
+                    </div>
+                    <div className="col-3">
                         <div className={`${styles.penguin}`}>
                             <img src={penguin} className={`${styles.penguin} ${isMovedPingu ? styles.movedPingu : ''} d-none d-md-block`} alt="penguin" />
                         </div>
-                    </h1>
-                    <h1 className="col-3"></h1>
-                    <h1 className="col-sm-3 col-2">
+                    </div>
+                    <div className="col-3"></div>
+                    <div className="col-sm-3 col-2">
                         <div className={`${styles.ajo} ${isMoved ? styles.movedRight : ''}`}>
                             <img src={ajo} className={`${styles.ajo}`} alt="ajo" />
                         </div>
-                    </h1>
-                </h1>
+                    </div>
+                </div>
 
             </div>
 
