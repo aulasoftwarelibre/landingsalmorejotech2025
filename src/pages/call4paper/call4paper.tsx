@@ -1,9 +1,13 @@
 import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./call4paper.module.css";
-import { supabase } from "../../supabase/server";
+//import { supabase } from "../../supabase/server";
+//import { v4 as uuidv4 } from 'uuid';
 
 export default function Call4Paper() {
+    const [userId, setUserId] = useState('');
+    const [imageFile, setImageFile] = useState(null); // State for the image file
+
     const [formData, setFormData] = useState({
         title: '',
         activityType: 'charla',
@@ -34,7 +38,30 @@ export default function Call4Paper() {
         });
     };
 
-    const handleInsert = async (e: any) => {
+    const handleImageChange = (e: any) => {
+        setImageFile(e.target.files[0]); // Store file in state
+    };
+
+    const uploadImage = async () => {
+        if (!imageFile) return null; // Return if no image is selected
+/** 
+        const { data, error } = await supabase
+            .storage
+            .from('user-uploads')
+            .upload(userId + "/" + formData.firstName + formData.lastName + uuidv4(), imageFile);
+
+        if (error) {
+            console.log("Error uploading image:", error);
+            return null;
+        } else {
+            console.log("Image uploaded successfully", data);
+            return data.path; // Return the path of the uploaded image
+        }
+
+        **/
+    };
+
+    const handleInsert = async (e:any) => {
         e.preventDefault();
         
         if (!formData.title) { alert("Por favor, indique el titulo"); return; }
@@ -46,17 +73,24 @@ export default function Call4Paper() {
         if (!formData.nickname) { alert("Por favor, rellena el nickname"); return; }
         if (!formData.residence) { alert("Por favor, indique su residencia"); return; }
 
+        // Upload image only when the form is submitted
+        const imagePath = await uploadImage();
+        const updatedFormData = {
+            ...formData,
+            photo: imagePath || '', // Add image path if uploaded successfully
+        };
+
+        /** 
+
         const { data, error } = await supabase
             .from('call4paper')
-            .insert([formData]);
+            .insert([updatedFormData]);
 
         if (error) {
             console.log("Data not inserted correctly", error);
         } else {
             console.log("Data inserted correctly", data);
-        }
-
-        
+        }**/
     };
 
     return (
@@ -108,7 +142,7 @@ export default function Call4Paper() {
                 <input type="text" name="pronouns" placeholder="Pronombres" className={`${styles.inputForm}`} onChange={handleChange} value={formData.pronouns} />
                 <input type="text" name="nickname" placeholder="Nick/Alias" className={`${styles.inputForm}`} onChange={handleChange} value={formData.nickname} />
                 <textarea name="notes" placeholder="¿Algo que debamos tener en cuenta? (comida, intolerancias, etc.)" className={`${styles.inputFormArea}`} onChange={handleChange} value={formData.notes}></textarea>
-                <input type="file" name="photo" className={`${styles.inputForm}`} onChange={handleChange} value={formData.photo} />
+                <input type="file" name="photo" className={`${styles.inputForm}`} onChange={handleImageChange} />
                 <textarea name="experience" placeholder="Experiencia Previa en Actividades del Estilo" className={`${styles.inputFormArea}`} onChange={handleChange} value={formData.experience}></textarea>
                 <input type="text" name="socialMediaLinks" placeholder="Enlaces a RRSS" className={`${styles.inputForm}`} onChange={handleChange} value={formData.socialMediaLinks} />
                 <input type="text" name="residence" placeholder="Municipio de Residencia Habitual" className={`${styles.inputForm}`} onChange={handleChange} value={formData.residence} />
