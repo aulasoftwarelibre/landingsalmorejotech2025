@@ -25,10 +25,35 @@ export default function Header() {
     const [isMovedPingu, setIsMovedPingu] = useState(false);
     const [isMovedWheat, setIsMovedWheat] = useState(false);
 
+
+    let scroll: number;
+    if(window.innerWidth>767 && window.innerWidth<851){
+        scroll=150;
+    }
+    else
+        scroll=350;
+
+
+    let TextScroll: number;
+    if(window.innerWidth>471){
+        TextScroll=400;
+    }
+    else
+        TextScroll=325;
+
+
+    let TopScroll: number;
+    if(window.innerWidth>=800 && window.innerWidth<=810){
+        TopScroll=150;
+    }
+    else
+        TopScroll=200;
+
+
     const handleWheatScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition > 350) {
+        if (scrollPosition > scroll) {
             setIsMovedWheat(true);
         } else {
             setIsMovedWheat(false);
@@ -39,7 +64,7 @@ export default function Header() {
     const handlePinguScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition > 350) {
+        if (scrollPosition > scroll) {
             setIsMovedPingu(true);
         } else {
             setIsMovedPingu(false);
@@ -50,7 +75,7 @@ export default function Header() {
     const handleWifiScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition > 200) {
+        if (scrollPosition > TopScroll) {
             setIsMovedWifi(true);
         } else {
             setIsMovedWifi(false);
@@ -60,7 +85,7 @@ export default function Header() {
     const handleTextScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition > 400) {
+        if (scrollPosition > TextScroll) {
             setIsMovedText(true);
         } else {
             setIsMovedText(false);
@@ -70,7 +95,7 @@ export default function Header() {
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if (scrollPosition > 350) {
+        if (scrollPosition > scroll) {
             setIsMoved(true);
         } else {
             setIsMoved(false);
@@ -80,7 +105,7 @@ export default function Header() {
     const handleTomatoScroll = () => {
         const scrollPosition = window.scrollY;
 
-        if(scrollPosition > 200){
+        if(scrollPosition > TopScroll){
             setIsMovedTomato(true);
         } else {
             setIsMovedTomato(false);

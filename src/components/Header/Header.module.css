@@ -528,7 +528,7 @@
     }
 
     .movedPingu{
-        transform: translate3d(15px, -65px,-100px);
+        transform: translate3d(-15px, -65px,-100px);
 
     }
 }
@@ -594,7 +594,7 @@
     }
 
     .movedText {
-        transform: translateY(-65px);
+        transform: translateY(-40px);
     }
 
     .moved3dtomato{
