@@ -39,15 +39,24 @@ export default function Header() {
         TextScroll=400;
     }
     else
-        TextScroll=325;
+        TextScroll=300;
 
 
-    let TopScroll: number;
+    let TopScroll: number; //Scroll Especifico para Tablet 
     if(window.innerWidth>=800 && window.innerWidth<=810){
         TopScroll=150;
+        TextScroll=120;
+        scroll=150;
     }
     else
         TopScroll=200;
+
+    if(window.innerWidth>1300){ //Scroll Especifico para pantallas grandes
+        scroll=400;
+        TextScroll=300;
+
+    }
+
 
 
     const handleWheatScroll = () => {

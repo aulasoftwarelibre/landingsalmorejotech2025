@@ -14,13 +14,27 @@ import map from '../../sprites/featherIcons/map.svg'
 
 export default function Footer() {
 
+
+
+  let scroll: number;
+
+  if(window.innerWidth>767 && window.innerWidth<910){
+    scroll=160;
+  }
+  else if(window.innerWidth<767){
+    scroll=100;
+  }
+  else
+    scroll=400;
+
+
   const [isMoved, setIsMoved] = useState(false);
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
 
     // Trigger the movement when the user scrolls down a certain amount (e.g., 200px)
-    if (scrollPosition > 400) {
+    if (scrollPosition > scroll) {
       setIsMoved(true);
     } else {
       setIsMoved(false);
@@ -37,7 +51,7 @@ export default function Footer() {
 
   return  (
     <div className={styles.fondo1} id="footer">
-      <div className="row">
+      <div className={`${styles.footerStr} row`}>
       <div className={`col-md-6 col-sm-12 pb-md-5 pb-sm-3 ${styles.movableDivLeft} ${isMoved ? styles.moved : ''}`}>
           <div className="row pt-2">
             <h2>Organiza:</h2>
