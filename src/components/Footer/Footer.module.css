@@ -1,99 +1,93 @@
 .fondo1 {
-    background: url('../../sprites/footer.svg') center/cover no-repeat;
-    text-align: center;
-    color: white;
-    height: 100%;
-    flex-shrink: 0;
-    padding-top: 15rem !important;
-    max-width: 100%;
-    overflow-x: hidden;
-    margin-top: -300px !important;
+  background: url('../../sprites/footer.svg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  height: 100%;
+  flex-shrink: 0;
+  padding-top: 15rem !important;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-top: -300px !important;
 }
 
 .tamanoFooter {
-    display: block;
-    color: white;
-    text-align: center;
+  display: block;
+  color: white;
+  text-align: center;
 }
 
 .logo {
-    max-width: 100%;
-    height: auto;
-    width: 200px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
-.movableDivLeft{
-    transform: translate3d(-10ch, 0.8in, 5em);
-    transition: transform 1.5s ease-out;    
-    position:relative;
+.movableDivLeft {
+  transform: translate3d(-10ch, 0.8in, 5em);
+  transition: transform 1.5s ease-out;
+  position: relative;
 }
 
-
-.movableDivRight{
-    transform: translate3d(10ch, 0.8in, 5em);
-    transition: transform 1.5s ease-out;
-    position:relative;
+.movableDivRight {
+  transform: translate3d(10ch, 0.8in, 5em);
+  transition: transform 1.5s ease-out;
+  position: relative;
 }
 
-.moved{
-    transform: translateX(0px);
+.moved {
+  transform: translateX(0px);
 }
-.movedLeft{
-    transform: translateX(0px);
-}
-
-.footerStr{
-    overflow-y: hidden;
+.movedLeft {
+  transform: translateX(0px);
 }
 
-
-
+.footerStr {
+  overflow: hidden;
+}
 
 @media (max-width: 768px) {
-    .logo {
-        width: 120px;
-    }
+  .logo {
+    width: 120px;
+  }
 
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        width: 100px;
-    }
+  .logo {
+    width: 100px;
+  }
 
-    .tamanoFooter {
-        margin-top: 20px;
-    }
+  .tamanoFooter {
+    margin-top: 20px;
+  }
 
-    .movableDivLeft{
-        transform: translateY(100px);
-    }
+  .movableDivLeft {
+    transform: translateY(100px);
+  }
 
-    .movableDivRight{
-        transform: translateY(100px);
-    }
+  .movableDivRight {
+    transform: translateY(100px);
+  }
 
-    .moved{
-        transform: translateY(0px);
-    }
+  .moved {
+    transform: translateY(0px);
+  }
 
-    .movedLeft{
-        transform: translateY(0px);
-    }
+  .movedLeft {
+    transform: translateY(0px);
+  }
 }

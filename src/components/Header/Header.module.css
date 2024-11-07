@@ -1,628 +1,604 @@
-.headerContainer{
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.headerContainer {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .tomato {
-    transition: transform 1s ease-out;
-    transform: translate3d(0px);
+  transition: transform 1s ease-out;
+  transform: translate3d(0px);
 }
 
-.moved3dtomato{
-    transform: translate3d(-2.7rem, -15rem, 1rem);
+.moved3dtomato {
+  transform: translate3d(-2.7rem, -15rem, 1rem);
 }
 
 .ajo {
-    transition: transform 1s ease-out;
-    transform: translate3d(0px);
+  transition: transform 1s ease-out;
+  transform: translate3d(0px);
 }
 
-.movedRight { /*movimiento del ajo*/
-    transform: translate3d(160px, -102px, -100px); 
+.movedRight {
+  /*movimiento del ajo*/
+  transform: translate3d(160px, -102px, -100px);
 }
 
-.normalText, .movedText {
-    position: relative;
-    transition: transform 1s ease-out;
+.normalText,
+.movedText {
+  position: relative;
+  transition: transform 1s ease-out;
 }
 
 .normalText {
-    transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .movedText {
-    transform: translateY(-100px);
+  transform: translateY(-100px);
 }
 
 .trigo {
-    transition: transform 1s ease-out;
-    transform: translate3d(0px);
+  transition: transform 1s ease-out;
+  transform: translate3d(0px);
 }
 
-.movedWheat{
-    transform: translate3d(-50px, -102px, -100px);
+.movedWheat {
+  transform: translate3d(-50px, -102px, -100px);
 }
 
 .wifi {
-    transition: transform 1s ease-out;
-    transform: translate3d(0px);
+  transition: transform 1s ease-out;
+  transform: translate3d(0px);
 }
 
-.movedWifi{
-    transform: translateX(200px);
+.movedWifi {
+  transform: translateX(200px);
 }
 
 .penguin {
-    transition: transform 1s ease-out;
-    transform: translate3d(0px);
+  transition: transform 1s ease-out;
+  transform: translate3d(0px);
 }
 
-.movedPingu{
-    transform: translateY(-60px);
-    transform: translate(50px, -100px);
+.movedPingu {
+  transform: translateY(-60px);
+  transform: translate(50px, -100px);
 }
 
-
-
-@media (min-width: 1160px){
-    .headerContainer{
-        margin-bottom: -500px;
-    }
+@media (min-width: 1160px) {
+  .headerContainer {
+    margin-bottom: -500px;
+  }
 }
 
-@media (max-width: 767px) and (min-width: 440px){
-    .headerContainer{
-        margin-bottom: -350px;
-    }
+@media (max-width: 767px) and (min-width: 440px) {
+  .headerContainer {
+    margin-bottom: -350px;
+  }
 }
-
-
-
 
 .buttonInicio {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border-radius: 80px;
-    color: #FFF;
-    font-family: "Oswald", sans-serif;
-    font-weight: 350;
-    line-height: normal;
-    width: 50vh;
-    max-width: 20vw;
-    max-height: 10vh;
-    background: #E35843;
-    height: 10vh;
-    border: 5px solid #FFF;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3.5vh;
-    transition: .3s;
-    z-index: 1;
-    font-family: inherit;
-    color: #FFF;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 80px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 350;
+  line-height: normal;
+  width: 50vh;
+  max-width: 20vw;
+  max-height: 10vh;
+  background: #e35843;
+  height: 10vh;
+  border: 5px solid #fff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #fff;
 }
 
 .buttonInicio::before {
-    content: '';
-    width: 0;
-    height: 1500px;
-    position: absolute;
-    top: 30%;
-    right: 50%;
-    transform: translate(50%, -50%) rotate(45deg);
-    background: #F02835;
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
+  content: '';
+  width: 0;
+  height: 1500px;
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(45deg);
+  background: #f02835;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
 }
 
 .buttonInicio:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .buttonInicio:hover {
-    color: #FFF;
+  color: #fff;
 }
-
-
-
 
 @media (min-width: 2500px) {
-    .logoContainer {
-        color: rgba(255, 255, 255, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-family: Oswald;
-        font-size: 230%;
-        font-style: normal;
-        font-weight: 200;
-        line-height: 75px;
-        color: white;
-        text-align: center;
-    }
+  .logoContainer {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Oswald;
+    font-size: 230%;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 75px;
+    color: white;
+    text-align: center;
+  }
 
-    .ajo {
-        position: relative;
-        right: 5%;
-        bottom: 5%;
-        margin-top: 17%;
-        width: 85%;
-        height: auto;
-    }
+  .ajo {
+    position: relative;
+    right: 5%;
+    bottom: 5%;
+    margin-top: 17%;
+    width: 85%;
+    height: auto;
+  }
 
-    .trigo {
-        position: relative;
-        bottom: 30%;
-        width: 85%;
-        height: auto;
-    }
+  .trigo {
+    position: relative;
+    bottom: 30%;
+    width: 85%;
+    height: auto;
+  }
 
-    .logo {
-        margin-top: 0%;
-        padding-left: 12%;
-        padding-right: 12%;
-    }
+  .logo {
+    margin-top: 0%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 
-    .tomato {
-        margin-top: 1%;
-        width: 20vw;
-        height: auto;
-    }
+  .tomato {
+    margin-top: 1%;
+    width: 20vw;
+    height: auto;
+  }
 
-    .wifi {
-        position: relative;
-        top: 5%;
-        width: 80%;
-        height: auto;
-        left: 33%;
-    }
+  .wifi {
+    position: relative;
+    top: 5%;
+    width: 80%;
+    height: auto;
+    left: 33%;
+  }
 
-    .penguin {
-        position: relative;
-        bottom: 25%;
-        right: 20%;
-        width: 85%;
-        height: auto;
-    }
+  .penguin {
+    position: relative;
+    bottom: 25%;
+    right: 20%;
+    width: 85%;
+    height: auto;
+  }
 
-    .moved3dtomato{
-        transform: translate3d(-3.5rem, -75%, 1rem);
-    }
+  .moved3dtomato {
+    transform: translate3d(-3.5rem, -75%, 1rem);
+  }
 
-    .movedRight {
-        transform: translate3d(160px, -60%, -100px);
-    }
+  .movedRight {
+    transform: translate3d(160px, -60%, -100px);
+  }
 
-    .normalText {
-        transform: translateY(0px);
-    }
-    
-    .movedText {
-        transform: translateY(-100px);
-    }
+  .normalText {
+    transform: translateY(0px);
+  }
 
-    .movedWheat{
-        transform: translate3d(-50px, -50%, -100px);
-    }
+  .movedText {
+    transform: translateY(-100px);
+  }
 
-    .movedWifi{
-        transform: translateX(53%);
-    }
+  .movedWheat {
+    transform: translate3d(-50px, -50%, -100px);
+  }
 
-
+  .movedWifi {
+    transform: translateX(53%);
+  }
 }
-
-
 
 @media (min-width: 1401px) and (max-width: 2500px) {
-    .logoContainer {
-        color: rgba(255, 255, 255, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-family: Oswald;
-        font-size: 230%;
-        font-style: normal;
-        font-weight: 200;
-        line-height: 75px;
-        color: white;
-        text-align: center;
-    }
+  .logoContainer {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Oswald;
+    font-size: 230%;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 75px;
+    color: white;
+    text-align: center;
+  }
 
-    .normalText, .movedText {
-        position: relative;
-        transition: transform 1s ease-out;
-    }
-    
-    .normalText {
-        transform: translateY(0px);
-    }
-    
-    .movedText {
-        transform: translateY(-100px);
-    }
+  .normalText,
+  .movedText {
+    position: relative;
+    transition: transform 1s ease-out;
+  }
 
-    .ajo {
-        position: relative;
-        right: 5%;
-        bottom: 40%;
-        margin-top: 17%;
-        width: 85%;
-        height: auto;
-        position: relative;
-        transition: transform 1s ease-out;
-        transform: translate3d(0px);
-    }
+  .normalText {
+    transform: translateY(0px);
+  }
 
-    .movedRight {
-        transform: translate3d(160px, -102px, -100px);
-    }
+  .movedText {
+    transform: translateY(-100px);
+  }
 
-    .trigo {
-        position: relative;
-        bottom: 75%;
-        width: 85%;
-        height: auto;
-        transition: transform 1s ease-out;
-        transform: translate3d(0px);
-    }
+  .ajo {
+    position: relative;
+    right: 5%;
+    bottom: 40%;
+    margin-top: 17%;
+    width: 85%;
+    height: auto;
+    position: relative;
+    transition: transform 1s ease-out;
+    transform: translate3d(0px);
+  }
 
-    .movedWheat{
-        transform: translate3d(-50px, -102px, -100px);
-    }
+  .movedRight {
+    transform: translate3d(160px, -102px, -100px);
+  }
 
-    .logo {
-        margin-top: 0%;
-        padding-left: 12%;
-        padding-right: 12%;
-    }
+  .trigo {
+    position: relative;
+    bottom: 75%;
+    width: 85%;
+    height: auto;
+    transition: transform 1s ease-out;
+    transform: translate3d(0px);
+  }
 
-    .tomato {
-        margin-top: 1%;
-        width: 20vw;
-        height: auto;
-        transition: transform 1s ease-out;
-        transform: translate3d(0px);
-    }
+  .movedWheat {
+    transform: translate3d(-50px, -102px, -100px);
+  }
 
-    .moved3dtomato{
-        transform: translate3d(-2.7rem, -15rem, 1rem);
-    }
+  .logo {
+    margin-top: 0%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 
-    .wifi {
-        position: relative;
-        top: 5%;
-        width: 80%;
-        height: auto;
-        left: 33%;
-        transition: transform 1s ease-out;
-        transform: translate3d(0px);
-    }
+  .tomato {
+    margin-top: 1%;
+    width: 20vw;
+    height: auto;
+    transition: transform 1s ease-out;
+    transform: translate3d(0px);
+  }
 
-    .movedWifi{
-        transform: translateX(200px);
-    }
+  .moved3dtomato {
+    transform: translate3d(-2.7rem, -15rem, 1rem);
+  }
 
-    .penguin {
-        position: relative;
-        bottom: 25%;
-        right: 20%;
-        width: 85%;
-        height: auto;
-        transition: transform 1s ease-out;
-        transform: translate3d(0px);
-    }
+  .wifi {
+    position: relative;
+    top: 5%;
+    width: 80%;
+    height: auto;
+    left: 33%;
+    transition: transform 1s ease-out;
+    transform: translate3d(0px);
+  }
 
-    .movedPingu{
-        transform: translateY(-60px);
-        transform: translate(50px, -100px);
+  .movedWifi {
+    transform: translateX(200px);
+  }
 
-    }
-    .movedWifi{
-        transform: translateX(200px);
-    }
+  .penguin {
+    position: relative;
+    bottom: 25%;
+    right: 20%;
+    width: 85%;
+    height: auto;
+    transition: transform 1s ease-out;
+    transform: translate3d(0px);
+  }
 
-
+  .movedPingu {
+    transform: translateY(-60px);
+    transform: translate(50px, -100px);
+  }
+  .movedWifi {
+    transform: translateX(200px);
+  }
 }
 
-@media (max-width: 1400px) and (min-width: 768px){
-    .buttonInicio{
-        max-width: 45vw;
-        max-height: 20vh;
-    }
+@media (max-width: 1400px) and (min-width: 768px) {
+  .buttonInicio {
+    max-width: 45vw;
+    max-height: 20vh;
+  }
 
-    .trigo {
-        position: relative;
-        bottom: 80%;
-        width: 85%;
-        height: auto;
-    }
+  .trigo {
+    position: relative;
+    bottom: 80%;
+    width: 85%;
+    height: auto;
+  }
 
-    .logoContainer {
-        color: rgba(255, 255, 255, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Oswald;
-        font-size: 215%;
-        font-style: normal;
-        font-weight: 150;
-        line-height: 50px;
-        color: white;
-        text-align: center;
-    }
+  .logoContainer {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald;
+    font-size: 215%;
+    font-style: normal;
+    font-weight: 150;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+  }
 
-    .ajo {
-        position: relative;
-        width: 90%;
-        height: auto;
-        right: 10%;
-        bottom: 20%;
-    }
+  .ajo {
+    position: relative;
+    width: 90%;
+    height: auto;
+    right: 10%;
+    bottom: 20%;
+  }
 
-    .penguin {
-        position: relative;
-        width: 80%;
-        height: auto;
-        right: 20%;
-        bottom: 25%;
-    }
+  .penguin {
+    position: relative;
+    width: 80%;
+    height: auto;
+    right: 20%;
+    bottom: 25%;
+  }
 
-    .logo {
-        margin-top: 0%;
-        padding-left: 12%;
-        padding-right: 12%;
-    }
+  .logo {
+    margin-top: 0%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 
-    .wifi {
-        position: relative;
-        left: 19%;
-        width: 90%;
-        margin-top: 5px;
-        height: auto;
-    }
+  .wifi {
+    position: relative;
+    left: 19%;
+    width: 90%;
+    margin-top: 5px;
+    height: auto;
+  }
 
-    .tomato {
-        margin-top: 1%;
-        width: 25vw;
-        height: auto;
-    }
+  .tomato {
+    margin-top: 1%;
+    width: 25vw;
+    height: auto;
+  }
 
-    .normalText {
-        transform: translateY(0px);
-    }
-    
-    .movedText {
-        transform: translateY(-65px);
-    }
+  .normalText {
+    transform: translateY(0px);
+  }
 
-    .moved3dtomato{
-        transform: translate3d(-3.5rem, -75%, 1rem);
-    }
+  .movedText {
+    transform: translateY(-65px);
+  }
 
-    .movedRight {
-        transform: translate3d(60px, -40%, -100px);
-    }
+  .moved3dtomato {
+    transform: translate3d(-3.5rem, -75%, 1rem);
+  }
 
+  .movedRight {
+    transform: translate3d(60px, -40%, -100px);
+  }
 
-    .movedWheat{
-        transform: translate3d(-25px, -20%, -100px);
-    }
+  .movedWheat {
+    transform: translate3d(-25px, -20%, -100px);
+  }
 
-    .movedWifi{
-        transform: translateX(65%);
-    }
+  .movedWifi {
+    transform: translateX(65%);
+  }
 
-    .movedPingu{
-        transform: translate3d(15px, -65px,-100px);
-
-    }
-    
+  .movedPingu {
+    transform: translate3d(15px, -65px, -100px);
+  }
 }
-
-
 
 @media (max-width: 767px) and (min-width: 576px) {
-    .buttonInicio{
-        max-width: 50vw;
-    }
-    .trigo {
-        position: relative;
-        bottom: 80%;
-        width: 100%;
-        height: auto;
-    }
+  .buttonInicio {
+    max-width: 50vw;
+  }
+  .trigo {
+    position: relative;
+    bottom: 80%;
+    width: 100%;
+    height: auto;
+  }
 
-    .logoContainer {
-        color: rgba(255, 255, 255, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Oswald;
-        font-size: 155%;
-        font-style: normal;
-        font-weight: 150;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-    }
+  .logoContainer {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald;
+    font-size: 155%;
+    font-style: normal;
+    font-weight: 150;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+  }
 
-    button {
-        z-index: 1000;
-    }
+  button {
+    z-index: 1000;
+  }
 
-    .tomato {
-        width: 150%;
-        height: auto;
-    }
+  .tomato {
+    width: 150%;
+    height: auto;
+  }
 
-    .ajo {
-        position: relative;
-        right: 10%;
-        bottom: 30%;
-        width: 100%;
-        height: auto;
-    }
+  .ajo {
+    position: relative;
+    right: 10%;
+    bottom: 30%;
+    width: 100%;
+    height: auto;
+  }
 
-    .headerContainer {
-        background-size: 30%;
-        margin-top: 0%;
-        background-position: left top, right top;
-        background-position: top right;
-    }
+  .headerContainer {
+    background-size: 30%;
+    margin-top: 0%;
+    background-position:
+      left top,
+      right top;
+    background-position: top right;
+  }
 
-    .logo {
-        margin-top: 1%;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
+  .logo {
+    margin-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 
-    .tomato {
-        margin-top: 1%;
-        width: 114%;
-        height: auto;
-    }
+  .tomato {
+    margin-top: 1%;
+    width: 114%;
+    height: auto;
+  }
 
+  .penguin {
+    margin-top: 150%;
+  }
 
-    .penguin {
-        margin-top: 150%;
-    }
+  .penguintop {
+    width: 160%;
+    height: auto;
+    position: relative;
+    right: 0%;
+  }
 
-    .penguintop {
-        width: 160%;
-        height: auto;
-        position: relative;
-        right: 0%;
-    }
+  .normalText {
+    transform: translateY(0px);
+  }
 
-    .normalText {
-        transform: translateY(0px);
-    }
-    
-    .movedText {
-        transform: translateY(-75px);
-    }
+  .movedText {
+    transform: translateY(-75px);
+  }
 
-    .moved3dtomato{
-        transform: translate3d(-3.5rem, -75%, 1rem);
-    }
+  .moved3dtomato {
+    transform: translate3d(-3.5rem, -75%, 1rem);
+  }
 
-    .movedRight {
-        transform: translate3d(50px, -30%, -100px);
-    }
+  .movedRight {
+    transform: translate3d(50px, -30%, -100px);
+  }
 
+  .movedWheat {
+    transform: translate3d(-25px, -20%, -100px);
+  }
 
-    .movedWheat{
-        transform: translate3d(-25px, -20%, -100px);
-    }
+  .movedWifi {
+    transform: translateX(65%);
+  }
 
-    .movedWifi{
-        transform: translateX(65%);
-    }
-
-    .movedPingu{
-        transform: translate3d(-15px, -65px,-100px);
-
-    }
+  .movedPingu {
+    transform: translate3d(-15px, -65px, -100px);
+  }
 }
 
+@media (max-width: 575px) {
+  .buttonInicio {
+    width: 40vh;
+    max-width: 70vw;
+  }
 
-@media (max-width: 575px){
-    .buttonInicio{
-        width: 40vh;
-        max-width: 70vw;
-    }
+  .logo {
+    margin-top: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 
-    .logo {
-        margin-top: 0%;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    
-    .tomato {
-        margin-top: 2%;
-        width: 126%;
-    }
+  .tomato {
+    margin-top: 2%;
+    width: 126%;
+  }
 
-    .penguintop {
-        position: relative;
-        right: 60%;
-        bottom: 80%;
-        height: auto;
-        width: 300%;
-    }
+  .penguintop {
+    position: relative;
+    right: 60%;
+    bottom: 80%;
+    height: auto;
+    width: 300%;
+  }
 
-    .logoContainer {
-        color: rgba(255, 255, 255, 0.75);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Oswald;
-        font-size: 120%;
-        font-style: normal;
-        font-weight: 150;
-        line-height: 30px;
-        color: white;
-        text-align: center;
-    }
+  .logoContainer {
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald;
+    font-size: 120%;
+    font-style: normal;
+    font-weight: 150;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+  }
 
-    .trigo {
-        position: relative;
-        bottom: 85%;
-        width: 110%;
-        height: auto;
-    }
+  .trigo {
+    position: relative;
+    bottom: 85%;
+    width: 110%;
+    height: auto;
+  }
 
-    .ajo {
-        position: relative;
-        right: 50%;
-        bottom: 30%;
-        width: 160%;
-        height: auto;
-    }
+  .ajo {
+    position: relative;
+    right: 50%;
+    bottom: 30%;
+    width: 160%;
+    height: auto;
+  }
 
+  .normalText {
+    transform: translateY(0px);
+  }
 
-    .normalText {
-        transform: translateY(0px);
-    }
+  .movedText {
+    transform: translateY(-40px);
+  }
 
-    .movedText {
-        transform: translateY(-40px);
-    }
+  .moved3dtomato {
+    transform: translate3d(-3.5rem, -85%, 1rem);
+  }
 
-    .moved3dtomato{
-        transform: translate3d(-3.5rem, -85%, 1rem);
-    }
+  .movedRight {
+    transform: translate3d(50px, -30%, -100px);
+  }
 
-    .movedRight {
-        transform: translate3d(50px, -30%, -100px);
-    }
+  .movedWheat {
+    transform: translate3d(-25px, -20%, -100px);
+  }
 
+  .movedWifi {
+    transform: translateX(65%);
+  }
 
-    .movedWheat{
-        transform: translate3d(-25px, -20%, -100px);
-    }
-
-    .movedWifi{
-        transform: translateX(65%);
-    }
-
-    .movedPingu{
-        transform: translateX(-1000px,);
-
-    }
-
+  .movedPingu {
+    transform: translateX(-1000px);
+  }
 }
-
 
 .calendar {
-    margin-right: 10px;
-    font-weight: 300;
+  margin-right: 10px;
+  font-weight: 300;
 }

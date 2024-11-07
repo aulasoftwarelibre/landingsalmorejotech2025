@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   color: #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 50;
   line-height: 59.28px;
@@ -21,7 +21,7 @@
   background-color: white;
 }
 
-.icon{
+.icon {
   margin-bottom: 5px !important;
 }
 
@@ -42,4 +42,3 @@
   color: #fff !important;
   font-size: 30px;
 }
-
