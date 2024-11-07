@@ -6,7 +6,7 @@ import styles from './call4paper.module.css'
 
 export default function Call4Paper() {
   //    const [userId, setUserId] = useState('');
-  const [imageFile, setImageFile] = useState(null) // State for the image file
+  //const [imageFile, setImageFile] = useState(null) // State for the image file
 
   const [formData, setFormData] = useState({
     title: '',
@@ -37,11 +37,11 @@ export default function Call4Paper() {
       [name]: type === 'checkbox' ? checked : value,
     })
   }
-
+  /*
   const handleImageChange = (e: any) => {
     setImageFile(e.target.files[0]) // Store file in state
-  }
-
+  }*/
+  /*
   const uploadImage = async () => {
     if (!imageFile) return null // Return if no image is selected
     /** 
@@ -58,8 +58,8 @@ export default function Call4Paper() {
             return data.path; // Return the path of the uploaded image
         }
 
+  } 
         **/
-  }
 
   const handleInsert = async (e: any) => {
     e.preventDefault()
@@ -98,11 +98,11 @@ export default function Call4Paper() {
     }
 
     // Upload image only when the form is submitted
-    const imagePath = await uploadImage()
+    /*const imagePath = await uploadImage()
     const updatedFormData = {
       ...formData,
       photo: imagePath || '', // Add image path if uploaded successfully
-    }
+    }*/
 
     /** 
 
@@ -254,7 +254,7 @@ export default function Call4Paper() {
           type="file"
           name="photo"
           className={`${styles.inputForm}`}
-          onChange={handleImageChange}
+          //onChange={handleImageChange}
         />
         <textarea
           name="experience"

@@ -47,8 +47,24 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <a className={`nav-link ${styles.boldText} `} href="/Call4Paper">
-              Call4Papers
+            <a
+              className={`nav-link ${styles.boldText} `}
+              href="https://salmorejo.tech/2024/"
+            >
+              Otras ediciones
+            </a>
+          </li>
+          <li className="nav-item px-4">
+            <a
+              className={`nav-link ${styles.boldText} `}
+              href="https://www.uco.es/aulasoftwarelibre/"
+            >
+              Sobre nosotros
+            </a>
+          </li>
+          <li className="nav-item px-4">
+            <a className={`nav-link ${styles.boldText} `} href="/#footer">
+              Contacto
             </a>
           </li>
         </ul>
