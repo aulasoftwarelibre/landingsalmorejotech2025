@@ -13,12 +13,21 @@ import map from '../../sprites/featherIcons/map.svg'
 
 export default function Footer() {
   let scroll: number
-
-  if (window.innerWidth > 767 && window.innerWidth < 910) {
-    scroll = 160
-  } else if (window.innerWidth < 767) {
-    scroll = 100
-  } else scroll = 400
+  if (window.innerWidth/window.innerHeight> 1 ) {
+    scroll = 450
+  }  
+  else if (window.innerWidth/window.innerHeight> 0.8 ) {
+    scroll = 200
+  }  
+  else if (window.innerWidth/window.innerHeight> 0.6 ) {
+    scroll = 80
+  }
+  else if(window.innerWidth/window.innerHeight> 0.5 ) {
+    scroll = 250
+  }
+  else{
+  scroll = 135
+  }
 
   const [isMoved, setIsMoved] = useState(false)
 

@@ -24,27 +24,36 @@ export default function Header() {
   const [isMovedWheat, setIsMovedWheat] = useState(false)
 
   let scroll: number
-  if (window.innerWidth > 767 && window.innerWidth < 851) {
-    scroll = 150
-  } else scroll = 350
-
   let TextScroll: number
-  if (window.innerWidth > 471) {
-    TextScroll = 400
-  } else TextScroll = 300
-
   let TopScroll: number //Scroll Especifico para Tablet
-  if (window.innerWidth >= 800 && window.innerWidth <= 810) {
-    TopScroll = 150
-    TextScroll = 120
-    scroll = 150
-  } else TopScroll = 200
 
-  if (window.innerWidth > 1300) {
-    //Scroll Especifico para pantallas grandes
+  if (window.innerWidth/window.innerHeight> 1 ) {
     scroll = 400
-    TextScroll = 300
+    TextScroll=400
+    TopScroll= 425
+
+  }  
+  else if (window.innerWidth/window.innerHeight> 0.8 ) {
+    scroll = 150
+    TextScroll=100
+    TopScroll= 100
+  }  
+  else if (window.innerWidth/window.innerHeight> 0.6 ) {
+    scroll = 50
+    TextScroll=75
+    TopScroll= 75
+  }  
+  else if(window.innerWidth/window.innerHeight> 0.5 ) {
+    scroll = 200
+    TextScroll=150
+    TopScroll= 175
   }
+  else{
+  scroll = 85
+  TextScroll=60
+  TopScroll= 60
+  }
+
 
   const handleWheatScroll = () => {
     const scrollPosition = window.scrollY
