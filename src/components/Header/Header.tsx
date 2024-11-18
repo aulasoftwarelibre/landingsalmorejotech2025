@@ -112,6 +112,7 @@ export default function Header() {
   }
 
   useEffect(() => {
+    
     window.addEventListener('scroll', handleScroll)
     window.addEventListener('scroll', handleTomatoScroll)
     window.addEventListener('scroll', handleTextScroll)
