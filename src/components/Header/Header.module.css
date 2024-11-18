@@ -3,6 +3,9 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
+a{
+  text-decoration: none !important;
+}
 
 .tomato {
   transition: transform 1s ease-out;

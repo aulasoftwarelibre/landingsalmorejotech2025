@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './Footer.module.css'
 import logo from '../../sprites/logoAula.png'
-import twitter from '../../sprites/featherIcons/twitter.svg'
 import facebook from '../../sprites/featherIcons/facebook.svg'
 import github from '../../sprites/featherIcons/github.svg'
 import youtube from '../../sprites/featherIcons/youtube.svg'

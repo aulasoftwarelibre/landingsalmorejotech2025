@@ -7,14 +7,10 @@ import penguin from '../../sprites/penguin.svg'
 import ajo from '../../sprites/ajo.svg'
 import tomato from '../../sprites/tomato.svg'
 import wifi from '../../sprites/wifi.svg'
-import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 export default function Header() {
-  const navigate = useNavigate()
-  const handleButton = () => {
-    navigate('/call4paper')
-  }
+
 
   const [isMoved, setIsMoved] = useState(false)
   const [isMovedTomato, setIsMovedTomato] = useState(false)
@@ -191,9 +187,11 @@ export default function Header() {
         </div>
         <div className="pt-4">
           <p className={`${styles.logoContainer}`}>
-            <button className={`${styles.buttonInicio}`} onClick={handleButton}>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVcJHUDOA0P6HsfWzXMbUmq7XWP6LbSqAs2cFT8zMt_y6pWA/viewform?usp=sf_link">
+            <button className={`${styles.buttonInicio}`}>
               Call4Papers
             </button>
+            </a>
           </p>
         </div>
         <div className={`row ${styles.logos}`}>
