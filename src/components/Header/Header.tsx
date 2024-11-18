@@ -155,12 +155,13 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className={styles.logoContainer}>
-          <img src={logo} className={`${styles.logo} img-fluid`} alt="logo" />
-        </div>
+        
         <div
           className={`pt-4 ${styles.normalText} ${isMovedText ? styles.movedText : ''}`}
         >
+        <div className={styles.logoContainer}>
+          <img src={logo} className={`${styles.logo} img-fluid`} alt="logo" />
+        </div>
           <p className={`${styles.logoContainer}`}>
             <FontAwesomeIcon
               icon={faCalendar}
