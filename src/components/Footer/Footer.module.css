@@ -1,5 +1,5 @@
 .fondo1 {
-  background: url('../../sprites/footer.svg') center/cover no-repeat;
+  background: url('../../../public/sprites/footer.svg') center/cover no-repeat;
   text-align: center;
   color: white;
   height: 100%;

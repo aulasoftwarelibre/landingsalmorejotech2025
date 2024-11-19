@@ -1,12 +1,12 @@
 import styles from './Header.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
-import logo from '../../sprites/logo.svg'
-import trigo from '../../sprites/trigo.svg'
-import penguin from '../../sprites/penguin.svg'
-import ajo from '../../sprites/ajo.svg'
-import tomato from '../../sprites/tomato.svg'
-import wifi from '../../sprites/wifi.svg'
+import logo from "../../../public/sprites/logo.svg"
+import trigo from '../../../public/sprites/trigo.svg'
+import penguin from '../../../public/sprites/penguin.svg'
+import ajo from '../../../public/sprites/ajo.svg'
+import tomato from '../../../public/sprites/tomato.svg'
+import wifi from '../../../public/sprites/wifi.svg'
 import { useEffect, useState } from 'react'
 
 export default function Header() {

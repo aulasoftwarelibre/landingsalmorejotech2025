@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import styles from './Footer.module.css'
-import logo from '../../sprites/logoAula.png'
-import facebook from '../../sprites/featherIcons/facebook.svg'
-import github from '../../sprites/featherIcons/github.svg'
-import youtube from '../../sprites/featherIcons/youtube.svg'
-import instagram from '../../sprites/featherIcons/instagram.svg'
-import telegram from '../../sprites/featherIcons/telegram.svg'
-import linkedln from '../../sprites/featherIcons/linkedin.svg'
-import mail from '../../sprites/featherIcons/mail.svg'
-import map from '../../sprites/featherIcons/map.svg'
+import logo from '../../../public/sprites/logoAula.png'
+import facebook from '../../../public/sprites/featherIcons/facebook.svg'
+import github from '../../../public/sprites/featherIcons/github.svg'
+import youtube from '../../../public/sprites/featherIcons/youtube.svg'
+import instagram from '../../../public/sprites/featherIcons/instagram.svg'
+import telegram from '../../../public/sprites/featherIcons/telegram.svg'
+import linkedln from '../../../public/sprites/featherIcons/linkedin.svg'
+import mail from '../../../public/sprites/featherIcons/mail.svg'
+import map from '../../../public/sprites/featherIcons/map.svg'
 
 export default function Footer() {
 
