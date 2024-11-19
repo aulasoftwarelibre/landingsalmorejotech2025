@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './Navbar.module.css'
-import isotipoBlanco from '../../../public/sprites/isotipo-blanco.svg'
+import isotipoBlanco from '../../sprites/isotipo-blanco.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
