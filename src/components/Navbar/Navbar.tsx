@@ -9,9 +9,7 @@ export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false)
   const navigate = useNavigate()
 
-  const handleInitButton = () => {
-    navigate('/')
-  }
+
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen)
@@ -20,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${styles.navback}`}>
       <div className="container py-md-2 py-sm-1 px-4">
-        <a className="navbar-brand" onClick={handleInitButton}>
+        <a className="navbar-brand">
           <img
             src={isotipoBlanco}
             className={`img-fluid ${styles.icon} `}
@@ -63,7 +61,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item px-4">
-            <a className={`nav-link ${styles.boldText} `} href="/#footer">
+            <a className={`nav-link ${styles.boldText} `} href="#footer">
               Contacto
             </a>
           </li>
