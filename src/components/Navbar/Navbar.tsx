@@ -3,13 +3,9 @@ import styles from './Navbar.module.css'
 import isotipoBlanco from '../../sprites/isotipo-blanco.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { useNavigate } from 'react-router-dom'
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false)
-  const navigate = useNavigate()
-
-
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen)
