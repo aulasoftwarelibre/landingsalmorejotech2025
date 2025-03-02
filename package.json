@@ -20,6 +20,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
     "style-components": "^0.1.0",
+    "svelte": "^5.19.6",
     "uuid": "^11.0.2"
   },
   "devDependencies": {
